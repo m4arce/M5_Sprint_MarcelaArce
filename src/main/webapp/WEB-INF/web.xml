@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>EmpresaPrevencionRiesgo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.IndexServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/inicio</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CapacitacionServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.CapacitacionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CapacitacionServlet</servlet-name>
+		<url-pattern>/crear-capacitacion</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ContactoServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.ContactoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContactoServlet</servlet-name>
+		<url-pattern>/contacto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CrearUsuarioServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.CrearUsuarioServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CrearUsuarioServlet</servlet-name>
+		<url-pattern>/crear-usuario</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListadoUsuariosServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.ListadoUsuariosServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListadoUsuariosServlet</servlet-name>
+		<url-pattern>/listado-usuarios</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListarCapacitacionesServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.ListarCapacitacionesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListarCapacitacionesServlet</servlet-name>
+		<url-pattern>/listado-capacitaciones</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>cl.jee.abpro.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+</web-app>
